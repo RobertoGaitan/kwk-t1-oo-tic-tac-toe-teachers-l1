@@ -136,10 +136,11 @@ end
 
 
 def play
+  game = TicTacToe.new
     while !over? do
-      turn
+      game.turn
     end
-  if won?
+  if game.won?
     puts "Congratulations #{winner}!"
   else
     puts "Cat's Game!"
