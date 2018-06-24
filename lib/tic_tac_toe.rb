@@ -131,16 +131,17 @@ class TicTacToe
     end
   end
   
-def play
-    while !over? do
-      turn
+  def play
+      while !over? do
+        turn
+      end
+    if won?
+      puts "Congratulations #{winner}!"
+    else
+      puts "Cat's Game!"
     end
-  if won?
-    puts "Congratulations #{winner}!"
-  else
-    puts "Cat's Game!"
   end
-end
+
 end
 
 
