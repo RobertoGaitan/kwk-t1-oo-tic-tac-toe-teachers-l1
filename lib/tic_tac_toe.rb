@@ -131,10 +131,6 @@ class TicTacToe
     end
   end
   
-end
-
-
-
 def play
     while !over? do
       turn
@@ -145,3 +141,7 @@ def play
     puts "Cat's Game!"
   end
 end
+end
+
+
+
